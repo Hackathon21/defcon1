@@ -1,0 +1,49 @@
+.footerContainerMain {
+  width: 100vw;
+  background-color: #393e46;
+  font-family: "Fira Code";
+  height: 9vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.footerBottom {
+  color: whitesmoke;
+  font-size: 1.2rem;
+  //   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  background-color: #393e46;
+  height: 40%;
+}
+
+.footerTextMain {
+  color: white;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60%;
+}
+
+.heart {
+  color: #c51104;
+}
+
+@media screen and (max-width: 768px) {
+  .heart {
+    display: none;
+  }
+}
+.footerTextTeam {
+  padding: 5px;
+}
+
+.defcon {
+  color: tomato;
+  font-weight: bolder;
+}

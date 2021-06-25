@@ -3,3 +3,22 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.mainBody {
+  min-height: 100vh;
+}
+
+.nav {
+  position: fixed;
+  z-index: 4;
+  top: 0;
+}
+
+.count {
+  min-height: 100vh;
+  margin-top: 64px;
+}
+
+.pageHandle {
+  margin-top: 64px;
+}
