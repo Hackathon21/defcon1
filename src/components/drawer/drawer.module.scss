@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap");
+
+* {
+  margin: 0;
+}
+
+.bars {
+  color: white;
+  font-size: 1.8rem;
+}
+
+.linkContainer {
+  list-style: none;
+  font-size: 1.5rem;
+  font-family: "Fira Code", monospace;
+  text-align: center;
+}
+
+.stylrem {
+  color: black;
+  font-family: sans-serif;
+  text-decoration: none;
+}
+
+.mainMenu {
+  display: flex;
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  margin-top: 1.2rem;
+  justify-content: space-around;
+  align-items: center;
+}
+.spacer {
+  margin-bottom: 1rem;
+}
+
+.mainMenu Button {
+  outline: none;
+  border: none;
+  background-color: white;
+  color: tomato;
+  font-size: 1.5rem;
+}
+
+.mainMenuButton .close-btn {
+  position: relative;
+  right: 75%;
+  z-index: 10;
+}
+
+.mainMenu button :hover {
+  transition: 300ms ease-in-out;
+  transform: scale(1.2);
+}
+
+.mainMenu button:active {
+  color: blue;
+}
+i .drawerNavContainer {
+  margin-top: 10px;
+}
+
+.linkContainer {
+  margin: 0;
+  padding: 0;
+}
+
+.routeLink {
+  padding: 10px;
+  width: 101%;
+  text-align: center;
+}
+
+.routeLink:hover {
+  color: #e7573e;
+  background-color: #53525244;
+  transition: 600ms ease-in-out;
+  transform: scale(1.2);
+}
+
+.linkStyle {
+  display: flex;
+  margin-left: 5rem;
+}
+
+.texts {
+  margin-left: -4rem;
+  margin-bottom: 1rem;
+}
+
+.menuText {
+  font-family: "Fira code";
+  font-size: 1.7rem;
+  font-weight: bolder;
+  margin-left: -4rem;
+}

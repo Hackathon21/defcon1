@@ -1,0 +1,35 @@
+.stylish {
+  color: white;
+  text-decoration: none;
+}
+
+.navCsi {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 47%;
+  margin-left: 2rem;
+}
+.navCsi:hover {
+  color: tomato;
+  transition: 300ms ease-in-out;
+}
+
+.navCsiText {
+  margin-left: 1.5rem;
+  font-size: 1.5rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.navCsiLink a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+.navbarFiller {
+  height: 64px;
+  z-index: 0;
+  width: 100vw;
+}
