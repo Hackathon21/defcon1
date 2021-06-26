@@ -84,7 +84,7 @@ export default function Drawer() {
                 <div className={styles.drawerNavContainer}>
                     <ul className={styles.linkContainer}>
                         {links.map((items, index) => (
-                            <div>
+                            <div key={index}>
                                 <li className={items.cName}>
                                     <div className={styles.linkStyle}>
 

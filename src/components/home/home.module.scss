@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+
 
 .mainBody {
   //   background-color: coral;
@@ -37,3 +39,152 @@ h1 {
     color: skyblue;
   }
 }
+
+.cardOne{
+  display : flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+   
+  border-radius:15px;
+  padding:1.5rem;
+  background-color: #0093E9;
+  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+
+}
+.cardTwo{
+  display : flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+   
+  border-radius:15px;
+  padding:1.5rem;
+  background-color: #0093E9;
+  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+
+}
+.cardThree{
+  display : flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  border-radius:15px;
+  padding:1.5rem;
+  background-color: #FF9A8B;
+  background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
+  
+
+}
+.cardFour{
+  display : flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  border-radius:15px;
+  padding:1.5rem;
+  background-color: #4158D0;
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+}
+.cardFive{
+  display : flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+   
+  border-radius:15px;
+  padding:1.5rem;
+  background-color: #FF9A8B;
+  background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
+
+}
+.cardSix{
+  display : flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  border-radius:15px;
+  padding:1.5rem;
+  background-image: radial-gradient( circle 759px at -6.7% 50%,  rgba(80,131,73,1) 0%, rgba(140,209,131,1) 26.2%, rgba(178,231,170,1) 50.6%, rgba(144,213,135,1) 74.1%, rgba(75,118,69,1) 100.3% );
+
+}
+
+.cardContainer{
+  display: flex;
+  padding:3rem 1rem;
+  justify-content:space-around;
+  align-items:center;
+  width:100%;
+  border : 1px solid red;
+  font-family: 'Fira Code', monospace;
+  
+
+  h3{
+    font-size: 1.5rem;
+    color:white;
+  }
+  h4{
+    font-size:1.2rem;
+    margin-top: 1rem;
+    color: white;
+  }
+
+}
+
+.icons{
+  color:white;
+  font-size : 5rem;
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width:768px){
+  .cardContainer{
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cardContainer > * {
+    margin-bottom: 1.5rem;
+    width:70vw;
+  }
+}
+
+.cardCompCont{
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url('https://images.unsplash.com/photo-1584291527908-033f4d6542c8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=625&q=80'); 
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size: cover;
+  aspect-ratio: relative;
+   
+
+  h1{
+    font-size:2rem;
+    padding-left:2.2rem;
+
+  }
+}
+
+.cardCompContWithin{
+  display : grid;
+  grid-template-columns: auto auto auto;
+  width: 70%;
+  font-size: 5rem;
+  margin: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-column-gap: 3rem;
+  grid-row-gap: 4rem;
+ 
+
+}
+
+ 
