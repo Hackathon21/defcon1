@@ -3,13 +3,13 @@ import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
-import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-// import { GiEarthAmerica, GiLoveInjection, GiIndianPalace } from "react-icons/gi";
+import styles from './card.module.scss';
+import CardMedia from "@material-ui/core/CardMedia";
 
 const useStyles = makeStyles({
     root: {
-        maxWidth: 275,
+        maxWidth: 325,
     },
     bullet: {
         display: 'inline-block',
@@ -24,30 +24,32 @@ const useStyles = makeStyles({
     },
 });
 
-export default function CardComponent() {
+export default function CardComponent({ title, icon }) {
     const classes = useStyles();
-    const bull = <span className={classes.bullet}>•</span>;
+
 
     return (
         <Card className={classes.root} variant="outlined">
             <CardContent>
-                <Typography className={classes.title} color="textSecondary" gutterBottom>
-                    Word of the Day
-                </Typography>
                 <Typography variant="h5" component="h2">
-                    be{bull}nev{bull}o{bull}lent
-                </Typography>
-                <Typography className={classes.pos} color="textSecondary">
-                    adjective
+                    <span className={styles.CardTitle}> {title}</span>
                 </Typography>
                 <Typography variant="body2" component="p">
-                    well meaning and kindly.
-                    <br />
-                    {'"a benevolent smile"'}
+                    <div className={styles.Flex}>
+                        <CardMedia
+                            component="img"
+                            alt="sudo"
+                            image={icon}
+                            style={{
+                                height: "20rem",
+                                width: "30rem",
+                                objectFit: "contain",
+                            }}
+                        />
+                    </div>
                 </Typography>
             </CardContent>
             <CardActions>
-                <Button size="small">Learn More</Button>
             </CardActions>
         </Card>
     );

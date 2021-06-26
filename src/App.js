@@ -5,6 +5,9 @@ import Preloader from "./components/preloader/Preloader.jsx";
 import Navbar from "./components/navbar/Navbar.jsx";
 import Footer from "./components/footer/Footer.jsx";
 import Home from "./components/home/Home.jsx";
+import Vaccine from "./components/Vaccine/Vaccine.jsx";
+import States from "./components/states/States.jsx";
+import Global from "./components/Global/Global.jsx";
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -29,7 +32,11 @@ function App() {
             <div className="count">
               <Switch>
                 <Route path="/" exact component={Home} />
-                <div className="pageHandle"></div>
+                <div className="pageHandle">
+                  <Route path="/global" component={Global} />
+                  <Route path="/states" component={States} />
+                  <Route path="/vaccines" component={Vaccine} />
+                </div>
               </Switch>
             </div>
           </Router>
