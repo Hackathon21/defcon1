@@ -4,7 +4,7 @@
 
 .mainBody {
   //   background-color: coral;
-  width: 100vw;
+  min-width: 100vw;
 }
 
 .banner {
@@ -193,4 +193,8 @@ h1 {
 
  Link{
    cursor:pointer;
+ }
+
+ .map{
+  //  min-height:100vh;
  }

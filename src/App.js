@@ -8,6 +8,7 @@ import Home from "./components/home/Home.jsx";
 import Vaccine from "./components/Vaccine/Vaccine.jsx";
 import States from "./components/states/States.jsx";
 import Global from "./components/Global/Global.jsx";
+import Beds from "./components/beds/Beds.jsx";
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -36,6 +37,7 @@ function App() {
                   <Route path="/global" component={Global} />
                   <Route path="/states" component={States} />
                   <Route path="/vaccines" component={Vaccine} />
+                  <Route path="/beds" component={Beds} />
                 </div>
               </Switch>
             </div>

@@ -26,6 +26,14 @@ export default function Home() {
         {
             heading: 'India Stats',
             icon: 'http://www.clipartbest.com/cliparts/niB/MGB/niBMGBdXT.png'
+        },
+        {
+            heading: 'Oxygen',
+            icon: 'https://img.flaticon.com/icons/png/512/421/421358.png?size=1200x630f&pad=10,10,10,10&ext=png&bg=FFFFFFFF'
+        },
+        {
+            heading: 'Covid Beds',
+            icon: 'https://img.icons8.com/officel/2x/hospital-bed.png'
         }
 
     ];
@@ -97,9 +105,19 @@ export default function Home() {
                             <CardComponent title={cardData[2].heading} icon={cardData[2].icon} />
                         </Tilt>
                     </Link>
+                    <Tilt>
+                        <CardComponent title={cardData[3].heading} icon={cardData[3].icon} />
+                    </Tilt>
+                    <Link to="/beds">
+                        <Tilt>
+                            <CardComponent title={cardData[4].heading} icon={cardData[4].icon} />
+                        </Tilt>
+                    </Link>
                 </div>
+
             </div>
         </div>
+
     </div>)
 }
 

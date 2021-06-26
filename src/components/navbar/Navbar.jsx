@@ -3,7 +3,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
-
+import { Link } from "react-router-dom";
 import styles from "./navbar.module.scss";
 import Drawer from "../drawer/Drawer.jsx";
 
@@ -36,17 +36,19 @@ export default function Navbar() {
                         <Drawer onClick={showSidebar} />
 
                         <Typography variant="h6" className={classes.title}>
+                            <Link to="/">
+                                <div className={styles.navCsi}>
+                                    <img
+                                        src="https://seeklogo.com/images/D/defqon-1-logo-8DE9EDE080-seeklogo.com.png"
+                                        width="40rem"
+                                        height="30rem"
+                                        alt="defcon"
+                                    ></img>
 
-                            <div className={styles.navCsi}>
-                                <img
-                                    src="https://seeklogo.com/images/D/defqon-1-logo-8DE9EDE080-seeklogo.com.png"
-                                    width="40rem"
-                                    height="30rem"
-                                    alt="defcon"
-                                ></img>
+                                    <h5 className={styles.navCsiText}>DEFCON</h5>
+                                </div>
+                            </Link>
 
-                                <h5 className={styles.navCsiText}>DEFCON</h5>
-                            </div>
 
                         </Typography>
 
