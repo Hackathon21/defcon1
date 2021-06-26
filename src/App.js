@@ -38,6 +38,7 @@ function App() {
                   <Route path="/states" component={States} />
                   <Route path="/vaccines" component={Vaccine} />
                   <Route path="/beds" component={Beds} />
+                  <Route path="/hunger" component={hunger} />
                 </div>
               </Switch>
             </div>
