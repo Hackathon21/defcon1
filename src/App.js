@@ -37,8 +37,7 @@ function App() {
                   <Route path="/global" component={Global} />
                   <Route path="/states" component={States} />
                   <Route path="/vaccines" component={Vaccine} />
-                  <Route path="/beds" component={Beds} />
-                  <Route path="/hunger" component={hunger} />
+                  <Route path="/beds" component={Beds} />                  
                 </div>
               </Switch>
             </div>
